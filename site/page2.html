@@ -30,10 +30,9 @@
        <h2>
         This page will probably have my work
        </h2>
-        <p style="text-align: center; text-indent: 0px;">Here is one of my games (let's pretend)</p>
+        <p style="text-align: center; text-indent: 0px;">Here's the game I used to test if this stuff worked.</p>
     </div>
  <div>
-    <p class="GAME1"> 
        <!--  
         <object id="UnityObject" classid="clsid:444785F1-DE89-4295-863A-D46C3A781394"
         width="420" height="750"
@@ -43,85 +42,9 @@
         type="application/vnd.unity" pluginspage="http://www.unity3d.com/unity-web-player-2.x" />
         </object>
     -->
-    </p> 
+    <iframe src="Plat1-v0.2/index.html" width="960" height="650" scrolling="no"></iframe>
+    
 </div>
-<div id="unity-container" class="unity-desktop">
-    <canvas id="unity-canvas" width=960 height=600></canvas>
-    <div id="unity-loading-bar">
-      <div id="unity-logo"></div>
-      <div id="unity-progress-bar-empty">
-        <div id="unity-progress-bar-full"></div>
-      </div>
-    </div>
-    <div id="unity-mobile-warning">
-      WebGL builds are not supported on mobile devices.
-    </div>
-    <div id="unity-footer">
-      <div id="unity-webgl-logo"></div>
-      <div id="unity-fullscreen-button"></div>
-      <div id="unity-build-title">Platformer1</div>
-    </div>
-  </div>
-  <script>
-    var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/plat1-v0.1-web.loader.js";
-    var config = {
-      dataUrl: buildUrl + "/plat1-v0.1-web.data.br",
-      frameworkUrl: buildUrl + "/plat1-v0.1-web.framework.js.br",
-      codeUrl: buildUrl + "/plat1-v0.1-web.wasm.br",
-      streamingAssetsUrl: "StreamingAssets",
-      companyName: "DefaultCompany",
-      productName: "Platformer1",
-      productVersion: "1.0",
-    };
-
-    var container = document.querySelector("#unity-container");
-    var canvas = document.querySelector("#unity-canvas");
-    var loadingBar = document.querySelector("#unity-loading-bar");
-    var progressBarFull = document.querySelector("#unity-progress-bar-full");
-    var fullscreenButton = document.querySelector("#unity-fullscreen-button");
-    //var mobileWarning = document.querySelector("#unity-mobile-warning");
-
-    // By default Unity keeps WebGL canvas render target size matched with
-    // the DOM size of the canvas element (scaled by window.devicePixelRatio)
-    // Set this to false if you want to decouple this synchronization from
-    // happening inside the engine, and you would instead like to size up
-    // the canvas DOM size and WebGL render target sizes yourself.
-    // config.matchWebGLToCanvasSize = false;
-
-    if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
-      container.className = "unity-mobile";
-      // Avoid draining fillrate performance on mobile devices,
-      // and default/override low DPI mode on mobile browsers.
-      config.devicePixelRatio = 1;
-      mobileWarning.style.display = "block";
-      setTimeout(() => {
-        mobileWarning.style.display = "none";
-      }, 5000);
-    } else {
-      canvas.style.width = "960px";
-      canvas.style.height = "600px";
-    }
-    loadingBar.style.display = "block";
-
-    var script = document.createElement("script");
-    script.src = loaderUrl;
-    script.onload = () => {
-      createUnityInstance(canvas, config, (progress) => {
-        progressBarFull.style.width = 100 * progress + "%";
-      }).then((unityInstance) => {
-        loadingBar.style.display = "none";
-        fullscreenButton.onclick = () => {
-          unityInstance.SetFullscreen(1);
-        };
-      }).catch((message) => {
-        alert(message);
-      });
-    };
-    document.body.appendChild(script);
-  </script>
-
-
    <div><p>     Suspendisse nisl elit, rhoncus eget, elementum ac, condimentum eget, diam. Proin magna. Fusce neque. Quisque malesuada placerat nisl.
     Praesent turpis. Phasellus volutpat, metus eget egestas mollis, lacus lacus blandit dui, id egestas quam mauris ut lacus. Quisque id mi. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla.
     Phasellus viverra nulla ut metus varius laoreet. Donec vitae sapien ut libero venenatis faucibus. Etiam iaculis nunc ac metus. Aenean massa.
