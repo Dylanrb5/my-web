@@ -6,7 +6,72 @@
    <link rel="stylesheet" href="styles.css" type="text/css">
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width initial-scale=1">
-   <title>DylanRB Site (dylanrb.com? maybe?)</title>
+   <title>DylanRB Site</title>
+   <style>
+       .container{
+            position: relative;
+            max-width: 900;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+       }
+
+       span{
+           color: rgb(240, 252, 255);
+           font-family: young;
+           font-weight: 400;
+           font-size: 1rem;
+       }
+
+       form{
+           text-align: left;
+           float: left;
+           max-width: 900px;
+           background-color: rgb(74, 78, 83);
+           padding: 40px;
+           border-radius: 5px;
+       }
+
+       input{
+           background-color: lightgray;
+           width: 100%;
+           padding: 1px;
+           margin: 2px 0 10px;
+           border-style: solid;
+           border-width: 2px;
+           border-color: rgb(155, 155, 155);
+           border-radius: 2px;
+           resize: none;
+       }
+
+       input[type="submit"]{
+           cursor: pointer;
+           font-family: young;
+           font-weight: 800;
+           font-size: 1rem;
+
+       }
+
+       textarea{
+        background-color: lightgray;
+           width: 100%;
+           padding: 1px;
+           margin: 2px 0 10px;
+           border-style: solid;
+           border-width: 2px;
+           border-color: rgb(155, 155, 155);
+           border-radius: 2px;
+           resize: vertical;
+           min-height: 50px;
+       }
+
+       input.sub{
+           width: 30%;
+           padding: 8px;
+       }
+
+   </style>
 </head>
  
 <body class="other_pg">
@@ -26,13 +91,34 @@
             <li id="here" class="margin-on-top">CONTACT</li>
            </ul>
        </nav>
-   </header>
-   <section>
-       <div>
-           <!--<h2>Contact Info</h2>-->
+   </header> 
+   <section style="margin-top: 60px;">
+        <div style="color: red; margin-bottom: 20px;">Sorry, this doesn't work yet</div>
+       <div class="container">
+           <!--<h2>Contact Info</h2>
            <p class="not-much">Not much to see yet, but here&nbsp;is&nbsp;my&nbsp;email:</p>
            <a href="mailto:dylan.rodriguezbarrera0@gmail.com">dylan.rodriguezbarrera0@gmail.com</a>
-       </div>
+           -->
+
+       
+       <form>
+           <div>
+                <span>Name</span>
+               <input type="text" name="" required="">
+           </div>
+           <div>
+            <span>Email</span>
+            <input type="text" name="" required="">
+        </div>
+        <div>
+            <h4 style="color: rgb(240, 252, 255); margin: 0; font-size: 1rem; font-weight: 400;">Your Message</h4>
+            <textarea style="width: 250px; height: 125px;"></textarea>
+        </div>
+        <div>
+            <input class="sub" type="submit" name="" value="Send">
+        </div>
+       </form>
+    </div>
    </section>
 </body>
  

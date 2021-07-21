@@ -222,6 +222,7 @@
         text-indent: 40px;
         margin-left: 50px;
         margin-right: 50px;
+        font-weight: 100;
     }
 
     p.small{
@@ -239,7 +240,7 @@
         text-indent: 40px;
         margin-left: 50px;
         margin-right: 50px;
-
+        font-weight: 100;
     }
 
     p.art-grid{
