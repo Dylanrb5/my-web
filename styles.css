@@ -2,37 +2,37 @@
     
     @font-face {
         font-family: b612;
-        src: url(B612Mono-Regular.ttf);
+        src: url("B612Mono-Regular.ttf");
     }
 
     @font-face {
         font-family: titleFont;
-        src: url(Monoid-Regular.ttf);
+        src: url("Monoid-Regular.ttf");
     }
 
     @font-face {
         font-family: linkFonts;
-        src: url(FiraCode-SemiBold.ttf);
+        src: url("FiraCode-SemiBold.ttf");
     }
 
     @font-face {
         font-family: bodyFont;
-        src: url(Compagnon-Medium.otf);
+        src: url("Compagnon-Medium.otf");
     }
 
     @font-face {
         font-family: montHeavy;
-        src: url(Mont-HeavyDEMO.otf);
+        src: url("Mont-HeavyDEMO.otf");
     }
 
     @font-face {
         font-family: montLight;
-        src: url(Mont-ExtraLightDEMO.otf);
+        src: url("Mont-ExtraLightDEMO.otf");
     }
 
     @font-face {
         font-family: coolvetica;
-        src: url(coolvetica\ rg.ttf);
+        src: url("coolvetica\ rg.ttf");
     }
 
     @font-face {
