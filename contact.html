@@ -4,6 +4,7 @@
 <head>
    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
    <link rel="stylesheet" href="styles.css" type="text/css">
+   <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width initial-scale=1">
    <title>DylanRB Site</title>
@@ -34,7 +35,7 @@
        }
 
        input{
-           background-color: lightgray;
+           background-color: rgb(221, 221, 221);
            width: 100%;
            padding: 1px;
            margin: 2px 0 10px;
@@ -54,7 +55,7 @@
        }
 
        textarea{
-        background-color: lightgray;
+        background-color: rgb(221, 221, 221);
            width: 100%;
            padding: 1px;
            margin: 2px 0 10px;
@@ -66,9 +67,10 @@
            min-height: 50px;
        }
 
-       input.sub{
+       .sub{
            width: 30%;
            padding: 8px;
+           margin: 0 auto 0 auto;
        }
 
    </style>
@@ -92,8 +94,8 @@
            </ul>
        </nav>
    </header> 
-   <section style="margin-top: 60px;">
-        <div style="color: red; margin-bottom: 20px;">Sorry, this doesn't work yet</div>
+   <section style="margin-top: 20px;">
+        <div style="color: rgb(255, 94, 0); margin-bottom: 20px; font-size: 0.9rem;">This might work, but I'm not sure.</div>
        <div class="container">
            <!--<h2>Contact Info</h2>
            <p class="not-much">Not much to see yet, but here&nbsp;is&nbsp;my&nbsp;email:</p>
@@ -101,25 +103,31 @@
            -->
 
        
-       <form>
+       <form action="https://send.pageclip.co/RYlPsfV8juGY8TJXZz9R809iMGi6Vn1o" class="pageclip-form" method="post">
            <div>
                 <span>Name</span>
-               <input type="text" name="" required="">
+               <input type="text" name="name" required="" value="">
            </div>
            <div>
             <span>Email</span>
-            <input type="text" name="" required="">
+            <input type="email" name="email" required="" value="">
         </div>
         <div>
             <h4 style="color: rgb(240, 252, 255); margin: 0; font-size: 1rem; font-weight: 400;">Your Message</h4>
-            <textarea style="width: 250px; height: 125px;"></textarea>
+            <textarea style="width: 250px; height: 125px;" name="Message"></textarea>
         </div>
         <div>
-            <input class="sub" type="submit" name="" value="Send">
+            <!-- <input type="submit" name="" value="Send"> -->
+            <button type="submit" class="pageclip-form__submit" style="padding-top: 4px;">
+                <span style="color: black; padding-top: 10px;">Send</span>
+              </button>
         </div>
        </form>
+       <div id="status"></div>
     </div>
    </section>
+<script src="script1.js"></script>
+<script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
  
 </html>
