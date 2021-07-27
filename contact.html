@@ -36,7 +36,7 @@
        }
 
        input{
-           background-color: rgb(221, 221, 221);
+           background-color: rgb(235, 235, 235);
            width: 100%;
            padding: 1px;
            margin: 2px 0 10px;
@@ -55,8 +55,12 @@
 
        }
 
+       ::placeholder{
+           color: rgb(199, 199, 199);
+       }
+
        textarea{
-        background-color: rgb(221, 221, 221);
+        background-color: rgb(235, 235, 235);
            width: 100%;
            padding: 1px;
            margin: 2px 0 10px;
@@ -92,14 +96,14 @@
             <!--<span class="bigger"></span>-->
             <li class="working"><a href="page2.html" title="Some Stuff">PROJECTS</a></li>
              <!--<span class="bigger"></span>-->
-            <li class="working"><a href="about.html" title="About Me">ABOUT</a></li>
-            <!--<span class="bigger"></span>-->
+            <li class="working" id="push-back"><a href="about.html" title="About Me">ABOUT</a></li>
+            <span></span>
             <li id="here" class="margin-on-top">CONTACT</li>
            </ul>
        </nav>
    </header> 
    <section style="margin-top: 20px;">
-        <div style="color: rgb(255, 94, 0); margin-bottom: 20px; font-size: 0.9rem;"></div>
+        <div style="color: rgb(255, 94, 0); margin: 10px auto 25px auto; font-size: 0.9rem;">You can send me a message about anything. It works now, trust me.</div>
        <div class="container">
            <!--<h2>Contact Info</h2>
            <p class="not-much">Not much to see yet, but here&nbsp;is&nbsp;my&nbsp;email:</p>
@@ -110,15 +114,15 @@
        <form action="https://send.pageclip.co/RYlPsfV8juGY8TJXZz9R809iMGi6Vn1o" class="pageclip-form" method="post">
            <div>
                 <span>Name</span>
-               <input type="text" name="name" required="" value="">
+               <input type="text" name="name" required="" value="" placeholder="Don Joe">
            </div>
            <div>
             <span>Email</span>
-            <input type="email" name="email" required="" value="">
+            <input type="email" name="email" required="" value="" placeholder="your.email@example.com">
         </div>
         <div>
             <h4 style="color: rgb(240, 252, 255); margin: 0; font-size: 1rem; font-weight: 400;">Your Message</h4>
-            <textarea style="width: 250px; height: 125px;" name="Message"></textarea>
+            <textarea style="width: 250px; height: 125px;" name="Message" placeholder="&quot;what's up&quot;"></textarea>
         </div>
         <div>
             <!-- <input type="submit" name="" value="Send"> -->
