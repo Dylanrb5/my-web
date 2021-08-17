@@ -206,13 +206,28 @@
 
     header
     {
-       
+        position: relative;
         background-color: rgb(24, 25, 26);
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         margin-left: 0%;
         margin-right: 0%;
     }
+
+    #top div p{
+        font-size: 2.2em;
+        position: absolute;
+        top: 0.61em;
+        color: cadetblue;
+        background-color: rgb(24, 25, 26);
+        margin: 0;
+        padding: 0;
+        /* bottom: 0;
+        left: 0;
+        right: 0; */
+    }
+
+
 
     p {
         color: #dfdfdf;
@@ -345,12 +360,12 @@
         font-size: 2em;
     }
 
-    /*
-    .lefter
+    
+    .lefter li
     {
-        padding-right: 86px;
+        font-size: 1.5em;
     }
-    */
+    
     .bigger
     {
         font-size: 18px;
@@ -407,12 +422,16 @@
     .art-grid{
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: repeat(5, 300px);
-        row-gap: 100px;
+        grid-template-rows: repeat(26, 300px);
+        row-gap: 5px;
         align-items: auto;
-
         place-items: center center;
 
+    }
+
+    .art-grid img{
+        max-height: 300px;
+        min-height: 100px;
     }
 
     #game1{
