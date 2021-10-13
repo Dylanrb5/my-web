@@ -126,13 +126,13 @@
 
     h2.typewriter::before{
         background: #1a2224;
-        animation: typewriter 3s steps(21) 1s forwards;
+        animation: typewriter 2.8s steps(27) 1s forwards;
     }
 
     h2.typewriter::after{
         width: 0.125em;
         background: black;
-        animation: typewriter 3s steps(21) 1s forwards,
+        animation: typewriter 2.8s steps(27) 1s forwards,
                     blink steps(10) 0.8s infinite;
 
     }
@@ -238,6 +238,10 @@
         margin-left: 50px;
         margin-right: 50px;
         font-weight: 100;
+    }
+
+    footer {
+        padding: 1.5em 1.5em 1.5em 1.5em;
     }
 
     p.small{
